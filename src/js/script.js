@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     if (!extension_container) return;
 
-    const response = await fetch('../../data.json');
+    const response = await fetch('./data.json');
     let lists = await response.json();
 
     function render() {
