@@ -146,6 +146,13 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       toggleTheme.addEventListener('click', function () {
         app.classList.toggle('dark');
+        if(app.classList.contains('dark')){
+            this.src  = "assets/images/icon-sun.svg";
+            document.querySelector('.mode').classList.add('bg-[#1F2535]','rounded-md','border','border-slate-500');
+        }else{
+            this.src  = "assets/images/icon-moon.svg";
+            document.querySelector('.mode').classList.remove('bg-[#1F2535]','bg-[#1F2535]','rounded-md','border','border-slate-500');
+        }
         localStorage.setItem('theme', app.classList.contains('dark') ? 'dark' : 'light');
       });
 

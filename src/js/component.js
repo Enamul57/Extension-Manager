@@ -2,7 +2,7 @@
 function extensionCard(name, description, logo, isActive, index) {
         let extension = document.createElement('div');
 
-        extension.className = "item content-background shadow-sm shadow-gray-400 rounded-lg px-5 py-6 mb-6";
+        extension.className = "item content-background shadow-sm shadow-gray-400 rounded-lg px-5 py-6  dark:bg-[#1F2535]";
 
         extension.innerHTML = `
         <!--Extension Card Top-->

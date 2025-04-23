@@ -14,15 +14,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     </head>
   <body>
-    <div class="mx-auto container bg-background w-full dark:bg-black dark:text-white min-h-screen" id="app">
-      <div class="pt-[30px] mx-5 content">
+    <div class="mx-auto container bg-background w-full dark:bg-[#050B21] dark:text-white min-h-screen" id="app">
+      <div class="pt-[30px] mx-[10%] content">
         <!-- Header -->
         <div
-          class="extension_header content-background mb-10 flex justify-between align-items-center px-2 py-1 rounded-md shadow-sm shadow-gray-300"
+          class="extension_header content-background mb-10 flex justify-between align-items-center px-2 py-1 rounded-md shadow-sm shadow-gray-300  dark:bg-[#1F2535] dark:shadow-none dark:text-white"
         >
-          <img src="assets/images/logo.svg" alt="logo_image"/>
+         <div class="flex">
+          <img src="assets/images/logo.svg" alt="logo_image" class="m-0 p-0 "/>
+         </div>
           <div
-            class="w-[44px] h-[44px] bg-[#EEEEEE] object-fill flex justify-center items-center rounded-md"
+            class="w-[44px] h-[44px] bg-[#EEEEEE] object-fill flex justify-center items-center rounded-md mode"
           >
             <img src="assets/images/icon-moon.svg" alt="logo_image"  id="dark_theme"/>
           </div>
@@ -49,7 +51,7 @@
 
         
         <!-- container -->
-        <div id="extensionLists" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14 mx-auto w-full"></div>
+        <div id="extensionLists" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-14 gap-x-2 gap-y-2 mx-auto w-full"></div>
          
       </div>
       </div>
