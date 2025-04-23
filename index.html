@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      tailwind.config = {
+        darkMode: 'class'
+      }
+    </script>
+
+    <!-- ✅ Load Tailwind CDN first -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+  <body>
+    <div class="mx-auto container bg-background w-full dark:bg-black dark:text-white min-h-screen" id="app">
+      <div class="pt-[30px] mx-5 content">
+        <!-- Header -->
+        <div
+          class="extension_header content-background mb-10 flex justify-between align-items-center px-2 py-1 rounded-md shadow-sm shadow-gray-300"
+        >
+          <img src="assets/images/logo.svg" alt="logo_image"/>
+          <div
+            class="w-[44px] h-[44px] bg-[#EEEEEE] object-fill flex justify-center items-center rounded-md"
+          >
+            <img src="assets/images/icon-moon.svg" alt="logo_image"  id="dark_theme"/>
+          </div>
+        </div>
+        <!-- Extension List -->
+        <div class="extension_list_label mb-6">
+          <h1 class="font-primary text-4xl font-bold text-center">
+            Extension List
+          </h1>
+        </div>
+        <div class="extension_list_status flex justify-around mb-2 px-2">
+          <button id="allStatus" class="border border-slate-400 font-semibold text-lg px-6 py-2 rounded-3xl">
+            All
+          </button>
+          <button id="active" class="border border-slate-400 font-semibold text-lg px-6 py-2 rounded-3xl">
+            Active
+          </button>
+          <button id="inactive" class="border border-slate-400 font-semibold text-lg px-6 py-2 rounded-3xl">
+            Inactive
+          </button>
+        </div>
+
+        
+        <!-- container -->
+        <div id="extensionLists" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14 mx-auto w-full"></div>
+         
+      </div>
+      </div>
+    <script src="./src/js/component.js"></script>
+    <script src="./src/js/script.js"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class' 
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>

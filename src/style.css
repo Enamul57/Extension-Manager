@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+.bg-background{
+    @apply bg-[#ECF3FD];
+}
+.content-background{
+    @apply bg-[#FCFDFF];
+}
+.font-primary{
+    @apply text-[#172145];
+}
+
+.font_label{
+    @apply text-xl font-bold;
+}
